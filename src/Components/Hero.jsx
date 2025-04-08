@@ -6,7 +6,6 @@ import Navbar from './Navbar';
 const Hero = () => {
     return (
         <div className="bg-white min-h-screen px-6 md:px-20 py-10">
-            <Navbar />
             {/* Hero content */}
             <div className="flex flex-col-reverse md:flex-row justify-between items-center">
                 <div className="md:w-1/2 space-y-6 text-center md:text-left">

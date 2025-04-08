@@ -10,11 +10,10 @@ const Navbar = () => {
 
       {/* Desktop nav */}
       <ul className="hidden md:flex space-x-8 text-black font-medium">
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Use Cases</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
       </ul>
 
       <button className="hidden md:block border border-black px-4 py-2 rounded-full hover:bg-black hover:text-white transition">
@@ -41,11 +40,10 @@ const Navbar = () => {
           </button>
         </div>
         <ul className="space-y-6 text-black font-medium">
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Use Cases</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#hero" onClick={() => setIsOpen(false)}>Home</a></li>
+          <li><a href="#services" onClick={() => setIsOpen(false)}>Services</a></li>
+          <li><a href="#process" onClick={() => setIsOpen(false)}>Process</a></li>
+          <li><a href="#testimonials" onClick={() => setIsOpen(false)}>Testimonials</a></li>
         </ul>
         <button className="mt-8 w-full border border-black px-4 py-2 rounded-full hover:bg-black hover:text-white transition">
           Request a quote
